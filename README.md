@@ -19,7 +19,7 @@ This project is a simple HTTP server that receives messages from Roblox and eval
 ### 1. Clone or Download
 
 ```bash
-git clone https://github.com/your-username/roblox-interpreter-server.git
+git clone https://github.com/extentfx/Lua-interpreter-inside-of-roblox/server.js
 cd roblox-interpreter-server
 ```
 
