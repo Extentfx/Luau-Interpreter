@@ -1,10 +1,10 @@
 # Roblox External Interpreter Server
 
-This project is a simple HTTP server that receives messages from Roblox and evaluates basic Lua-like math expressions (or echoes strings). It enables you to offload interpreting logic from Roblox to an external service — perfect for building a remote Lua emulator or math evaluator.
+This project is a simple HTTP server that receives messages from Roblox and evaluates basic Lua-like math expressions (or echoes strings). It enables you to offload interpreting logic from Roblox to an external service, perfect for building a remote Lua emulator or math evaluator.
 
 ---
 
-## 🚀 Features
+## 🧑‍💻 Features
 
 * Receives POST requests from Roblox using `HttpService`
 * Evaluates safe math expressions (e.g. `2 + 3 * (4 - 1)`)
@@ -97,3 +97,5 @@ MIT License
 ## 📬 Feedback & Contributions
 
 Issues and pull requests are welcome! Feel free to fork or extend the interpreter logic for your game needs.
+
+Uncopylocked Game: 
