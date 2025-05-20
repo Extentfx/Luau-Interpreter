@@ -1,0 +1,28 @@
+
+-- make sure you have a remote function named 'RunLuaCode' in replicatedstorage!
+
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local HttpService = game:GetService("HttpService")
+local RunLuaCode = ReplicatedStorage:WaitForChild("RunLuaCode")
+
+-- Replace with your actual webhook URL
+local WEBHOOK_URL = "https://ngrokwebhook.ngrok.app/receive"
+
+RunLuaCode.OnServerInvoke = function(player, code)
+	if typeof(code) ~= "string" or code == "" then
+		return "Invalid code"
+	end
+
+	local payload = HttpService:JSONEncode({ code = code })
+
+	local success, response = pcall(function()
+		return HttpService:PostAsync(WEBHOOK_URL, payload, Enum.HttpContentType.ApplicationJson, false)
+	end)
+
+	if success then
+		return response -- Plain text response like "0.909297"
+	else
+		return "Webhook error"
+	end
+end
