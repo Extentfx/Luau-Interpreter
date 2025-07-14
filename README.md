@@ -90,7 +90,7 @@ sendToServer("Hello, server!")
 
 ## 📄 License
 
-MIT License
+[MIT License](https://github.com/Extentfx/Luau-Interpreter/blob/main/MITLicense)
 
 ---
 
